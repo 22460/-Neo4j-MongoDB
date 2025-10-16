@@ -1,0 +1,41 @@
+server:
+  address: 0.0.0.0
+  port: 8081
+spring:
+  # Neo4j 配置
+  neo4j:
+    uri: bolt://localhost:7687  # Neo4j Bolt 协议连接地址，默认端口 7687
+    authentication:
+      username: neo4j            # Neo4j 用户名
+      password: Yinzehao0925     # Neo4j 密码
+  
+  # MongoDB 配置
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/zhenhuanzhuan
+      database: zhenhuanzhuan
+  
+  # SpringDoc OpenAPI 配置
+  springdoc:
+    api-docs:
+      path: /api-docs
+      enabled: true
+    swagger-ui:
+      path: /swagger-ui.html
+      enabled: true
+      doc-expansion: none
+      tags-sorter: alpha
+      operations-sorter: method
+      default-model-expand-depth: 1
+      default-models-expand-depth: 1
+logging:
+  level:
+    com:
+      xys:
+        Repository: debug
+        service: debug
+        controller: debug
+    org:
+      springframework:
+        data:
+          neo4j: debug
