@@ -1,0 +1,11 @@
+com\xys\config\CorsConfig.class
+com\xys\MyApplication.class
+com\xys\service\MessageService.class
+com\xys\controller\PersonController.class
+com\xys\pojo\Message.class
+com\xys\Repository\MessageRepository.class
+com\xys\Repository\PersonRepository.class
+com\xys\controller\MessageController.class
+com\xys\pojo\Person.class
+com\xys\service\PersonService.class
+com\xys\pojo\MessageDTO.class
